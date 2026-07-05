@@ -1,0 +1,25 @@
+
+V1 1 0 DC 12
+L1 1 2 300e-6
+
+M1 2 3 0 0 LOWSIDE
+Cgs1 3 0 2.08e-9
+Cgd1 3 2 120e-12
+Cds1 2 0 280e-12
+
+R1 3 5 47
+V2 5 0 PULSE(15,0,0,15e-9,8e-9,10e-6,20e-6)
+
+D1 2 4 Dmodel
+
+C1 4 0 33e-6
+R2 4 0 24
+
+.model LOWSIDE NMOS(Vto=4 KP=4.9 LAMBDA=0.03 IS=67e-12)
+.model Dmodel D(IS=1e-12 N=1)
+
+.tran 20e-3 startup
+.end
+
+
+
