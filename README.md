@@ -96,7 +96,7 @@ Measured using a Keithley DC Electronic Load. Efficiency was measured both for I
   <img src="assets/efficiency/efficiency_non-synchronous.png" width="550" alt="Efficiency - Non Synchronous">
 </p>
 
-Note: Soft-start has been extended to 4s for visualisation purposes.
+> Note: Soft-start has been extended to 4s for visualisation purposes.
 
 https://github.com/user-attachments/assets/e9330696-3960-4b1e-9ea8-92d7e14ccc6c
 
