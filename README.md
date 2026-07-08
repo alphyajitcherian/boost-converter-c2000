@@ -65,7 +65,7 @@ A D30E120 diode was used. The low side MOSFET was driven via a TLP350 gate drive
 
 ### Simulation
 
-The circuit was simulated in LTSpice. Although a manufacturer SPICE subcircuit model exists for the IRF640N, a Level 1 MOSFET model was used instead with parasitic gate-drain, gate-source, and drain-source capacitances. This approach was taken so that the circuit could be implemented in a custom circuit simulator built previously, allowing its output to be cross-verified with LTSpice. No SPICE parameters were found for the D30E120 diode, so a 
+The circuit was simulated in LTSpice. Although a manufacturer SPICE subcircuit model exists for the IRF640N, a Level 1 MOSFET model was used instead with parasitic gate-drain, gate-source, and drain-source capacitances. This approach was taken so that the circuit could be implemented in a [custom circuit simulator](https://github.com/alphyajitcherian/transient-circuit-simulator) built previously, allowing its output to be cross-verified with LTSpice. No SPICE parameters were found for the D30E120 diode, so a 
 generic diode was used in its place. As a result, the simulated output is not component specific and should be taken as approximate. See [netlist](assets/simulation/non-synchronous_netlist.cir)
 
 <p align="center">
